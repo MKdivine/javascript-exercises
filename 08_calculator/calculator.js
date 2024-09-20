@@ -29,13 +29,16 @@ const power = function(num1, num2) {
 };
 
 const factorial = function(num) {
-  if (num === 0 || num === 1)
+  if (num === 0 || num === 1) {
     return 1;
-  for(let i = num; i >= num1; i--) {
-      num = num * i
   }
-  return num;
-};
+  let result = 1;
+  for (let i = num; i > 1; i--) {
+    result *= i;
+  }
+  return result;
+}
+
 
 // Do not edit below this line
 module.exports = {

@@ -7,8 +7,13 @@ const subtract = function(num1, num2) {
 };
 
 const sum = function(arr) {
-	return arr.reduce((a, b) => a + b, 0);
+  let result = 0;
+  arr.forEach(num => {
+      result += num;
+  });
+  return result;
 }
+
 
 function multiply(arr) {
   let result = 1;

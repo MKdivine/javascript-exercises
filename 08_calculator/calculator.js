@@ -28,10 +28,13 @@ const power = function(num1, num2) {
 	return Math.pow(num1, num2);
 };
 
-const factorial = function(num1) {
-  for(let i = 0; i < num1; i++) {
-    
+const factorial = function(num) {
+  if (num === 0 || num === 1)
+    return 1;
+  for(let i = num; i >= num1; i--) {
+      num = num * i
   }
+  return num;
 };
 
 // Do not edit below this line

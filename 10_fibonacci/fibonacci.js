@@ -1,9 +1,14 @@
-const fibonacci = function(num) {
+const fibonacci = function (anzahl) {
+  let n1 = 0;
+  let n2 = 1,
+    nextTerm;
 
-    for (let i = 0; i < num; i++) {
-        return num +=num
-    }
+  for (let i = 0; i < anzahl; i++) {
+    nextTerm = n1 + n2;
+    n1 = n2;
+    n2 = nextTerm;
+  }
+  return n1;
 };
-
 // Do not edit below this line
 module.exports = fibonacci;
